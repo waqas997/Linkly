@@ -4,20 +4,30 @@ import Banner from "../components/Banner";
 import PartnerSec from "../components/PartnerSec";
 import Timeline from "../components/Timeline";
 import Branded from "../components/Branded";
+import home from "../images/Home.png";
+import Tabs from "../components/Tabs";
+import Reviews from "../components/Reviews";
+import Platform from "../components/Platform";
+import Footer from "../components/Footer";
 
 export default function HomePage() {
   return (
-    <div className="">
-      <div className="bg-gradient-to-tr to-pink-100 from-white h-screen">
+    <div
+    
+    >
+      <div className="">
         <Navbar />
         <Banner />
-        
       </div>
       <div className="">
-      <PartnerSec/>
+        <PartnerSec />
       </div>
-      <Timeline/>
-      <Branded/>
+      <Timeline />
+      <Branded />
+      <Tabs />
+      <Reviews />
+      <Platform/>
+      <Footer/>
     </div>
   );
 }

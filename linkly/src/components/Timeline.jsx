@@ -12,8 +12,8 @@ export default function Timeline() {
     <div className="bg-gradient-to-b from-purple-100 to-blue-200 py-12 ">
       <div className="main-container">
         <div className="text-center">
-          <h2 className="inter600 text-[50px]">How Linkly Works</h2>
-          <p className="inter400 text-[18px]">
+          <h2 className="inter600 text-[20px] md:text-[30px] land:text-[50px]">How Linkly Works</h2>
+          <p className="inter400 text-[12px] md:text-[15px] land:text-[18px]">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
           </p>
@@ -21,10 +21,10 @@ export default function Timeline() {
        
           <div className="flex flex-col sm:flex-row items-start justify-evenly mt-12 ">
             <div className="w-full sm:w-1/3">
-              <h2 className="inter600 text-[50px]">
+              <h2 className="inter600 text-[18px] md:text-[25px] land:text-[35px] lg:text-[40px] xl:text-[50px]">
                 Redirect by Country or Device
               </h2>
-              <p>
+              <p className="text-[12px] md:text-[15px] land:text-[16px]">
                 Redirect users to URLs based on their country or device, or use
                 a link rotator. Change the destination even after the link is
                 created.

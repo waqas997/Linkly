@@ -6,10 +6,10 @@ import img3 from "../images/brand3.png";
 export default function Branded() {
   return (
     <div
-      style={{
-        backgroundImage:
-          "linear-gradient(to top, rgb(168 237 234 / 34%) 0% , rgb(249 229 229 / 54%) 80%)",
-      }}
+      // style={{
+      //   backgroundImage:
+      //     "linear-gradient(to top, rgb(168 237 234 / 34%) 0% , rgb(249 229 229 / 54%) 80%)",
+      // }}
       class=""
     >
       <div className="main-container py-12">
