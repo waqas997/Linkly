@@ -17,23 +17,30 @@ body {
 .text,
 .image {
   opacity: 0;
-  transform: translateX(-50px); /* Initial position */
-  animation: fadeIn 1s ease forwards; /* Animation name, duration, timing function, and fill mode */
+  transform: translateX(-50px);
+  /* Initial position */
+  animation: fadeIn 1s ease forwards;
+  /* Animation name, duration, timing function, and fill mode */
 }
 
 .image {
-  order: 1; /* Change order to display image on the right */
-  transform: translateX(50px); /* Initial position */
+  order: 1;
+  /* Change order to display image on the right */
+  transform: translateX(50px);
+  /* Initial position */
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateX(-50px); /* Initial position */
+    transform: translateX(-50px);
+    /* Initial position */
   }
+
   to {
     opacity: 1;
-    transform: translateX(0); /* Final position */
+    transform: translateX(0);
+    /* Final position */
   }
 }
 
@@ -116,6 +123,20 @@ body {
   .main-container {
     width: 1320px;
     margin: auto;
+  }
+}
+
+@media(max-width:769px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "g"
+      "a"
+      "b"
+    ;
+  grid-auto-flow: column;
+
   }
 }
 

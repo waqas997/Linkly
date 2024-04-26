@@ -178,7 +178,7 @@ export default function Platform() {
     <div className="flex flex-wrap ">
         
 {cards.slice(0,display).map((item,index)=>(
-    <img className="w-[100px] land:w-[165px] land:h-[165px]" src={item.image} alt="" />
+    <img className="w-[70px] sm:w-[100px] land:w-[165px] land:h-[165px]" src={item.image} alt="" />
 ))}
     </div>
 </div>

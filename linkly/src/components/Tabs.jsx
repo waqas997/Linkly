@@ -24,7 +24,7 @@ export default function Tabs() {
             Links
           </h2>
           <h2
-            className={`px-4 md:px-[12px] land:px-8 py-2 cursor-pointer text-[12px] md:text-[15px] land:text-[18px]  ${
+            className={`px-4 md:px-[12px] land:px-8 py-2 cursor-pointer text-[12px] md:text-[15px] land:text-[18px] whitespace-nowrap ${
               active === 1 ? "bg-[#fff]  rounded-full" : "text-white "
             }`}
             onClick={() => setActive(1)}
@@ -68,8 +68,39 @@ export default function Tabs() {
 <button className="inter400 bg-[#1361F5] rounded-full px-7 py-2 text-[12px] land:text-[18px] text-white mt-5">Get Started for Free</button>
 <p className="inter400 text-[#6d6d6d] text-center mt-3 text-[12px] land:text-[16px]">No credit card required</p>
           </div>
-          <div className={`${active === 1 ? "block" : "hidden"}`}>dsn</div>
-          <div className={`${active === 2 ? "block" : "hidden"}`}>sjnjdsn</div>
+          <div className={`${active === 1 ? "block" : "hidden"}`}><div className="flex flex-wrap gap-6 justify-center w-9/12 m-auto mb-8">
+              {[0, 1, 2, 3, 4, 5].map((item, index) => (
+                <div className="border-2 border-black  px-5 py-2 rounded-full md:text-[15px] land:text-[20px]">
+                  {(item === 0 && <p>Redirect by country</p>) ||
+                    (item === 1 && <p>Redirect by device</p>) ||
+                    (item === 2 && <p>Link rotators</p>) ||
+                    (item === 3 && <p>Add retargeting pixels to links</p>) ||
+                    (item === 4 && (
+                      <p>Meta Pixel integration</p>
+                    )) ||
+                    (item === 5 && <p>Link cloaking & disguising</p>) 
+                    }
+                </div>
+              ))}
+            </div></div>
+          <div className={`${active === 2 ? "block" : "hidden"}`}><div className="flex flex-wrap gap-6 justify-center w-9/12 m-auto mb-8">
+              {[0, 1, 2, 3, 4, 5, 6, 7, 8].map((item, index) => (
+                <div className="border-2 border-black  px-5 py-2 rounded-full md:text-[15px] land:text-[20px]">
+                  {(item === 0 && <p>Clear, beautiful reports</p>) ||
+                    (item === 1 && <p>GDPR compliant</p>) ||
+                    (item === 2 && <p>Integration with  Google Analytics 4</p>) ||
+                    (item === 3 && <p>Parameter & affiliate SubID tracking</p>) ||
+                    (item === 4 && (
+                      <p>Data export as CSV, JSON or Google Sheets</p>
+                    )) ||
+                    (item === 5 && <p>Easy API to get data into your app</p>) ||
+                    (item === 6 && <p>ISP lookup & Robot vs human disambiguation</p>) ||
+                    (item === 7 && <p>Integration with  Google Tag Manager</p>) ||
+                    (item === 8 && <p>Google Sheets Reporting Integration with live data feeds</p>) 
+                   }
+                </div>
+              ))}
+            </div></div>
         </div>
         </div>
       </div>

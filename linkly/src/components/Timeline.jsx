@@ -30,7 +30,7 @@ export default function Timeline() {
           </p>
         </div>
 
-        <div className="flex flex-col sm:flex-row items-center justify-evenly mt-16 h-[50vh]">
+        <div className="flex flex-col sm:flex-row items-center justify-evenly md:mt-16 h-[50vh]">
           {scrollIndex === 0 && (
             <div className="w-full sm:w-1/3 text">
               <h2 className="inter600 text-[18px] md:text-[25px] land:text-[35px] lg:text-[40px] xl:text-[50px] text-[#1d1d1d]">
@@ -90,9 +90,9 @@ export default function Timeline() {
           )}
 
           <div
-            className={`timeline w-5 h-5 rounded-full  flex items-center justify-center mb-12 `}
+            className={`timeline w-5 h-5 rounded-full   items-center justify-center mb-12 hidden md:flex`}
           >
-            <svg className="text-[#1361F5]"
+            <svg className="text-[#1361F5] "
               xmlns="http://www.w3.org/2000/svg"
               width="34"
               height="386"

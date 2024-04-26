@@ -18,7 +18,7 @@ export default function Navbar() {
   return (
     <>
       {/* DESTOP MENU */}
-      <div className={`main-container pt-5 hidden md:block z-10 relative`}>
+      <div className={`main-container pt-5 hidden md:block z-50 relative`}>
         <div className="flex items-center justify-between">
           <div className="logo font-bold text-[30px] ">
             <img src={logo} alt="" />
@@ -129,9 +129,9 @@ export default function Navbar() {
       </div>
 
       {/* MOBILE MENU */}
-      <div className={` pt-5 block md:hidden ${mobile?"fixed bg-[#D8F3FF] w-full h-screen top-0 px-20":"main-container"}  `}>
+      <div className={`relative pt-5 block md:hidden z-50 ${mobile?"fixed bg-[#D8F3FF] w-full h-screen top-0 ":"main-container"}  `}>
         <div className={`logo flex justify-between items-center font-bold text-[30px] mb-6 ${mobile&&"main-container"}`}>
-          <img src={logo} alt="" />
+          <img className="w-20" src={logo} alt="" />
           <div onClick={openNav} className="">{mobile?<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
 </svg>
