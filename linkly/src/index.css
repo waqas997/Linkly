@@ -38,14 +38,14 @@ body {
   font-style: normal;
 }
 
-.timeline::after {
+/* .timeline::after {
   content: "";
   top: 100%;
   left: 40%;
   height: 50px;
   border-right: 5px solid #1361F5;
   position: absolute;
-}
+} */
 
 
 
