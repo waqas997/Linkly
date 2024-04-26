@@ -3,7 +3,7 @@ import logo from '../images/footer_logo.png'
 
 export default function Footer() {
   return (
-    <div className='mt-12'>
+    <div className='mt-28'>
       <div className='flex'>
         <span className='h-1 flex-1 bg-[#ABF0FF]'></span>
         {/* <span className='h-3 bg-[#ABF0FF]'></span> */}
