@@ -10,6 +10,8 @@ import img8 from '../images/card8.png'
 import img9 from '../images/card9.png'
 import img10 from '../images/card10.png'
 import img11 from '../images/card11.png'
+import img12 from "../images/3.png";
+
 
 export default function Platform() {
     const [display,setDisplay] = useState(32)
@@ -154,9 +156,9 @@ export default function Platform() {
 
     ]
   return (
-    <div>
+    <div style={{backgroundImage:`url('${img12}')`,backgroundPosition:"bottom",backgroundSize:"112% "}}>
       <div className="main-container ">
-        <div className="text-center pt-28 pb-8">
+        <div className="text-center  md:pt-28 pb-8">
           <h4 className="text-[#1361F5] md:text-[15px] land:text-[18px] inter600">
             WE'RE FRIENDS WITH EVERYONE
           </h4>
@@ -175,7 +177,7 @@ export default function Platform() {
 </svg></button>
     </div>
 
-    <div className="flex flex-wrap ">
+    <div className="flex flex-wrap justify-between">
         
 {cards.slice(0,display).map((item,index)=>(
     <img className="w-[70px] sm:w-[100px] land:w-[165px] land:h-[165px]" src={item.image} alt="" />

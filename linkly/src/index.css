@@ -7,7 +7,9 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url("./images/Home.png");
+  background-color:
+    #F1F3F6;
+  /* background-image: url("./images/Home.png"); */
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -135,7 +137,7 @@ body {
       "a"
       "b"
     ;
-  grid-auto-flow: column;
+    grid-auto-flow: column;
 
   }
 }

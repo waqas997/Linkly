@@ -9,13 +9,20 @@ import Tabs from "../components/Tabs";
 import Reviews from "../components/Reviews";
 import Platform from "../components/Platform";
 import Footer from "../components/Footer";
+import shadow from "../images/43.png";
 
 export default function HomePage() {
   return (
-    <div
-    
-    >
-      <div className="">
+    <div>
+      <div
+        className=""
+        style={{
+          backgroundImage: `url('${shadow}')`,
+          backgroundPosition: "left",
+          backgroundSize: "138% 141%",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
         <Navbar />
         <Banner />
       </div>
@@ -26,8 +33,8 @@ export default function HomePage() {
       <Branded />
       <Tabs />
       <Reviews />
-      <Platform/>
-      <Footer/>
+      <Platform />
+      <Footer />
     </div>
   );
 }
