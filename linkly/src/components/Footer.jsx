@@ -64,7 +64,7 @@ export default function Footer() {
                 </ul>
             </div>
             </div>
-            <div className='flex items-center justify-between mt-12'>
+            <div className='flex items-center gap-2 justify-between mt-12'>
                 <img src={logo} alt="" />
                 <p className='text-[10px] text-[#3e3e59]'>© Linkly All rights reserved.</p>
                 <div className='flex items-center gap-3'><svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="none">

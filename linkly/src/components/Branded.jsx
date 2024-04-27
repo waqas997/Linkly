@@ -12,11 +12,11 @@ export default function Branded() {
       }}
       class=""
     >
-      <div className="main-container py-12 " style={{backgroundImage:`url('${img4}')`,backgroundPosition:"left",backgroundSize:"80%"}}>
+      <div className="main-container text-center md:text-left py-12 " style={{backgroundImage:`url('${img4}')`,backgroundPosition:"left",backgroundSize:"80%"}}>
         <div className="flex flex-col sm:flex-row ">
           <div className="w-full sm:w-1/2 ">
-            <div className="w-[90%]">
-              <h2 className="inter600 leading-[20px] land:leading-[48px] text-[18px] md:text-[25px] land:text-[35px] lg:text-[40px] w-9/12  text-[#1d1d1d]">
+            <div className="w-[90%]  m-auto md:mx-0">
+              <h2 className="inter600  leading-[20px] land:leading-[48px] text-[18px] md:text-[25px] land:text-[35px] lg:text-[40px] land:w-9/12  text-[#1d1d1d]">
                 Branded Link Shortening
               </h2>
               <p className="inter400 text-[12px] md:text-[15px] land:text-[16px] text-[#6d6d6d] mt-6">
@@ -53,12 +53,12 @@ export default function Branded() {
             <img src={img1} alt="" />
           </div>
         </div>
-        <div className="flex flex-col sm:flex-row justify-between mt-6" >
+        <div className="flex  flex-col-reverse sm:flex-row justify-between mt-6" >
           <div className="sm:w-1/2 w-full flex justify-between ">
             <img src={img2} alt="" />
           </div>
           <div className="w-full sm:w-1/2">
-            <div className="w-[90%] md:ml-auto">
+            <div className="w-[90%] m-auto md:mx-0 md:ml-auto">
               <h2 className="inter600 leading-[20px] land:leading-[48px] text-[18px] md:text-[25px] land:text-[35px] lg:text-[40px]  text-[#1d1d1d]">
                 Beautiful, Visual, Shareable Click Tracking Reports, fully
                 Integrated with Google Sheets
@@ -87,8 +87,8 @@ export default function Branded() {
         </div>
         <div className="flex flex-col sm:flex-row justify-between  mt-6">
           <div className="w-full sm:w-1/2">
-            <div className="w-[90%]">
-              <h2 className="inter600 leading-[20px] land:leading-[48px] text-[18px] md:text-[25px] land:text-[35px] lg:text-[40px] w-8/12 text-[#1d1d1d] mt-5">
+            <div className="w-[90%] m-auto md:mx-0">
+              <h2 className="inter600 leading-[20px] land:leading-[48px] text-[18px] md:text-[25px] land:text-[35px] lg:text-[40px] land:w-8/12 text-[#1d1d1d] mt-5">
                 Bring your whole Team
               </h2>
               <p className="inter400 text-[12px] md:text-[15px] land:text-[16px] text-[#6d6d6d] mt-6 ">

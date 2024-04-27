@@ -21,7 +21,7 @@ export default function Reviews() {
           </p>
         </div>
         <div className="cards pb-20">
-          <div className="flex flex-col md:flex-row gap-9">
+          <div className="flex flex-col md:flex-row gap-5">
             <div className="flex-[.4]  bg-[#fff] rounded-xl h-max px-6 py-3">
               <div className=" ">
                 <p className="text-[#6D6D6D] text-[12px] land:text-[18px] ">
@@ -73,7 +73,7 @@ export default function Reviews() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-stretch md:flex-row gap-9 mt-5">
+          <div className="flex flex-col items-stretch md:flex-row gap-5 mt-5">
             <div className="flex-[.7] flex  flex-col gap-5">
               <div className="  bg-[#fff] rounded-xl h-max p-4">
                 <div className=" ">
@@ -106,7 +106,7 @@ export default function Reviews() {
               </div>
             </div>
 
-            <div className="flex-[.5] p-4 rounded-xl h-max bg-[#fff] mt-3">
+            <div className="flex-[.5] p-4 rounded-xl h-max bg-[#fff] ">
               <div>
                 <p className="text-[#6D6D6D] text-[12px] land:text-[18px]">
                   “Love the geo targeting feature whereby it auto detects user’s

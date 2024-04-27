@@ -30,7 +30,7 @@ export default function Timeline() {
           </p>
         </div>
 
-        <div className="flex flex-col sm:flex-row items-center justify-evenly  md:mt-16 h-[65vh] land:h-[50vh]">
+        <div className="flex flex-col sm:flex-row items-center gap-10 md:justify-evenly  md:mt-16 h-[55vh] land:h-[50vh] mt-8">
           {scrollIndex === 0 && (
             <div className="w-full sm:w-1/3 text h-20 land:h-auto">
               <h2 className="inter600 leading-[20px] land:leading-[48px] mb-3 text-[18px] md:text-[25px] land:text-[35px] lg:text-[40px] xl:text-[50px] text-[#1d1d1d]">

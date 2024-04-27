@@ -8,14 +8,14 @@ export default function Tabs() {
   return (
     <div>
       <div className="main-container">
-        <div className="text-center my-16">
+        <div className="text-center my-8 land:my-16">
           <h2 className="inter600 text-[20px] md:text-[30px] land:text-[50px]">
             Linkly Feature
           </h2>
         </div>
         <div className="relative ">
           <div className=" absolute top-[-30px] w-full ">
-            <div className="tabs flex items-center border-[1px] rounded-full border-black justify-between bg-[#1361F5] w-full sm:w-7/12 md:w-6/12 land:w-5/12 m-auto px-4 py-3   ">
+            <div className="tabs flex items-center border-[1px] rounded-full border-black justify-between bg-[#1361F5] w-full sm:w-7/12 md:w-6/12 land:w-5/12 m-auto px-4 py-3  ">
               <h2
                 className={` px-4 md:px-[12px] land:px-8 py-2 cursor-pointer text-[12px] md:text-[15px] land:text-[18px]  ${
                   active === 0 ? "bg-[#fff]  rounded-full" : "text-white "
@@ -45,9 +45,9 @@ export default function Tabs() {
           </div>
           <div className="tabs-content border-[1px] border-black rounded-[20px] text-center pt-20 pb-8 bg-[#D8F3FF]">
             <div className={`${active === 0 ? "block" : "hidden"}`}>
-              <div className="flex flex-wrap gap-6 justify-center w-9/12 m-auto mb-8 ">
+              <div className="flex flex-wrap gap-3 md:gap-6 justify-center md:w-9/12 m-auto mb-8 ">
                 {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item, index) => (
-                  <div className="border-2 border-black  px-5 py-2 rounded-full text-[12px] md:text-[15px] land:text-[20px]">
+                  <div className="border-2 border-black px-2 md:px-5 py-1 md:py-2 rounded-full text-[12px] md:text-[15px] land:text-[20px]">
                     {(item === 0 && <p>Customize Social Media Previews</p>) ||
                       (item === 1 && <p>Add Retargeting Pixels</p>) ||
                       (item === 2 && <p>Custom domains & Vanity URLs</p>) ||
@@ -77,9 +77,9 @@ export default function Tabs() {
               </p>
             </div>
             <div className={`${active === 1 ? "block" : "hidden"}`}>
-              <div className="flex flex-wrap gap-6 justify-center w-9/12 m-auto mb-8">
+              <div className="flex flex-wrap gap-3 md:gap-6 justify-center md:w-9/12 m-auto mb-8">
                 {[0, 1, 2, 3, 4, 5].map((item, index) => (
-                  <div className="border-2 border-black  px-5 py-2 rounded-full text-[12px] md:text-[15px] land:text-[20px]">
+                  <div className="border-2 border-black px-2 md:px-5 md:py-2 py-1 rounded-full text-[12px] md:text-[15px] land:text-[20px]">
                     {(item === 0 && <p>Redirect by country</p>) ||
                       (item === 1 && <p>Redirect by device</p>) ||
                       (item === 2 && <p>Link rotators</p>) ||
@@ -91,9 +91,9 @@ export default function Tabs() {
               </div>
             </div>
             <div className={`${active === 2 ? "block" : "hidden"}`}>
-              <div className="flex flex-wrap gap-6 justify-center w-9/12 m-auto mb-8">
+              <div className="flex flex-wrap gap-3 md:gap-6 justify-center px-2 md:w-9/12 m-auto mb-8">
                 {[0, 1, 2, 3, 4, 5, 6, 7, 8].map((item, index) => (
-                  <div className="border-2 border-black  px-5 py-2 rounded-full text-[12px] md:text-[15px] land:text-[20px]">
+                  <div className="border-2 border-black  px-2 md:px-5 md:py-2 py-1 rounded-full text-[12px] md:text-[15px] land:text-[20px]">
                     {(item === 0 && <p>Clear, beautiful reports</p>) ||
                       (item === 1 && <p>GDPR compliant</p>) ||
                       (item === 2 && (
