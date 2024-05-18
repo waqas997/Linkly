@@ -116,8 +116,12 @@ export default function Navbar() {
             <a className="text-[14px] land:text-[18px] inter500" href="">
               Pricing
             </a>
-            <Link to='/support' className="text-[14px] land:text-[18px] inter500" href="">
-              Supportss
+            <Link
+              to="/support"
+              className="text-[14px] land:text-[18px] inter500"
+              href=""
+            >
+              Support
             </Link>
           </div>
           <div className="flex items-center gap-3">
