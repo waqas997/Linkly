@@ -1,12 +1,89 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import search from "../images/Search.png";
 import wave from "../images/waveline.png";
 import circle from "../images/circle.png";
 import shadow1 from "../images/shdaow1.png";
 import Footer from "../components/Footer";
+import shadow2 from "../images/shadow2.png";
+import shadow3 from "../images/shadow3.png";
+import shadow4 from "../images/shadow4.png";
+import { useNavigate, useLocation } from "react-router-dom";
+// import {supportinner} from "./SupportInner";
 
 export default function Support() {
+  const [activeTab, setActiveTab] = useState(null);
+  const navigate = useNavigate();
+
+  const handleNavigation = (tabIndex) => () => {
+    setActiveTab(tabIndex);
+    navigate(`/supportinner?activeTab=${tabIndex}`);
+  };
+
+  const GettingStart = [
+    "Adding a Custom Domain",
+    "Google Chrome Extension",
+    "Creating tracking links",
+    "Using UMT Tags",
+    "Delete a Link",
+    "Disable a Link",
+    "Custom Social Media Previews",
+    "Link Cloaking / URL Cloaking",
+    "Link Disguiser",
+    "Excluding IP Addresses",
+    "HTTP Status Code",
+    "About the Free Plan",
+    "Managing Links without Folders",
+    "About Robot Clicks",
+    "QR Codes",
+  ];
+  const Addons = [
+    "Google Sheets",
+    "Zapier",
+    "Importing Bitly Links",
+    "Export Data as CSV",
+    "API Access",
+    "Bulk Link Import",
+  ];
+  const Shortening = ["Mailto Links", "SMS links", "Call links"];
+  const Tool = ["Automatic (onsite) Link Replacement", "Linkify text"];
+  const Redirects = [
+    "Create App Store redirects",
+    "Create Country redirects",
+    "Use a link rotator",
+    "Hiding referrers",
+    "Podcast redirects",
+    "Forwarding URL Query Parameters",
+    "Fixing slow redirects",
+    "Expiring Links",
+  ];
+  const Tracking = [
+    "Using Meta / X / Google Pixels",
+    "Add Meta Pixel to Links",
+    "Adding Twitter Tailored Audience Tag to Links",
+    "Facebook/Meta Pixel & Amazon Retargeting",
+    "Google Tag Manager",
+  ];
+
+  const Traffic = [
+    "Links Blocked by Spam Filters",
+    "Inflated Click Figure",
+    "ISP Lookup",
+    "Search Bots",
+    "Cloud Providers",
+    "Links Blocked by Facebook/Instagram/Meta",
+  ];
+  const Domain = [
+    "Add a custom domain",
+    "Using Namecheap",
+    "Default Domain Redirect",
+  ];
+  const Miscellaneous = [
+    "Feature Request",
+    "Anti-Spam Policy",
+    "Release Notes",
+  ];
+
   return (
     <div
       className="relative z-20"
@@ -32,7 +109,7 @@ export default function Support() {
             <h2 className="mb-4 inter700 land:text-[50px] md:text-[38px] lg:text-[70px] leading-none">
               How can we help?
             </h2>
-            <p className="inter400 mb-5 text-[12px] land:text-[12px] land:text-[18px] md:w-[88%] land:w-[78%]">
+            <p className="inter400 mb-5 text-[12px]  land:text-[18px] md:w-[88%] land:w-[78%]">
               Find answers by searching, or see our popular guides below. Need
               extra help? Ask our support in the chat widget.
             </p>
@@ -75,24 +152,24 @@ export default function Support() {
           <div className="w-8/12 m-auto mt-8">
             <div className="flex flex-col md:flex-row justify-between">
               <div className="text-center md:text-left">
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
+                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6 cursor-pointer">
                   Create Tracking Links
                 </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
+                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6 cursor-pointer">
                   Custom Domain
                 </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
+                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6 cursor-pointer">
                   Link Cloaking
                 </p>
               </div>
               <div className="text-center md:text-left">
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
+                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6 cursor-pointer">
                   Create Expiring Links
                 </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
+                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6 cursor-pointer">
                   Link Rotator
                 </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
+                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6 cursor-pointer">
                   Shortening Mailto Links
                 </p>
               </div>
@@ -103,198 +180,153 @@ export default function Support() {
             {/* section */}
           </div>
         </div>
-        <div className=" ">
+        <div className="relative z-10">
+          <img
+            className="absolute -left-96 -top-96 z-0 h-fit"
+            src={shadow2}
+            alt=""
+          />
           <h2 className="inter700 text-[20px] md:text-[30px] land:text-[40px] text-center">
             Topics
           </h2>
           <div className="w-12/12 m-auto mt-8">
             <div className="flex flex-col md:flex-row justify-center md:gap-96">
-              <div className="md:ml-auto  text-center md:text-left">
+              <div className="md:ml-auto  text-center md:text-left relative">
+                {/* <img
+                  className="absolute bottom-0 left-0 z-0"
+                  src={shadow4}
+                  alt=""
+                /> */}
                 <h2 className="inter600 text-[16px] land:text-[22px] text-[#1d1d1d] mb-6">
                   Getting Started
                 </h2>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Adding a Custom Domain
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Google Chrome Extension
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Creating tracking links
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Using UMT Tags
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Delete a Links
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Disable a Link
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Custome Social Media Previews
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Link Cloaking / URL Cloaking
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Link Disguiser
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Excluding IP Addresses
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  HTTP Status Code
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  About the Free Plan
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Managing Links without Folders
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  About Robot Clicks
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  QR Codes
-                </p>
+                {GettingStart.map((item, index) => (
+                  <p
+                    className={`inter400 text-[12px] land:text-[18px] ${
+                      activeTab === index ? "text-blue-600" : "text-[#307EF3]"
+                    } underline underline-offset-4 mb-6 cursor-pointer`}
+                    onClick={handleNavigation(index)}
+                  >
+                    {item}
+                  </p>
+                ))}
+
                 <h2 className="inter600 text-[16px] land:text-[22px] text-[#1d1d1d] mb-6 mt-8">
                   Addons & Integrations
                 </h2>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Google Sheets
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Zapier
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Google Chrome Extension
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Importing Bitly Links
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Export Data as CSV
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  API Access
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Bulk Link Import
-                </p>
+                {Addons.map((item, index) => (
+                  <p
+                    className={`inter400 text-[12px] land:text-[18px] ${
+                      activeTab === index ? "text-blue-600" : "text-[#307EF3]"
+                    } underline underline-offset-4 mb-6 cursor-pointer`}
+                    onClick={handleNavigation(index)}
+                  >
+                    {item}
+                  </p>
+                ))}
+              
+               
                 <h2 className="inter600 text-[16px] land:text-[22px] text-[#1d1d1d] mb-6 mt-8">
                   Shortening Unusual Links
                 </h2>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Mailto Links
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  SMS links
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Call links
-                </p>
+                {Shortening.map((item, index) => (
+                  <p
+                    className={`inter400 text-[12px] land:text-[18px] ${
+                      activeTab === index ? "text-blue-600" : "text-[#307EF3]"
+                    } underline underline-offset-4 mb-6 cursor-pointer`}
+                    onClick={handleNavigation(index)}
+                  >
+                    {item}
+                  </p>
+                ))}
+                
                 <h2 className="inter600 text-[16px] land:text-[22px] text-[#1d1d1d] mb-6 mt-8">
                   Tools for Publishers
                 </h2>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Automatic (onsite) Link Replacement
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Linkify text
-                </p>
+                {Tool.map((item, index) => (
+                  <p
+                    className={`inter400 text-[12px] land:text-[18px] ${
+                      activeTab === index ? "text-blue-600" : "text-[#307EF3]"
+                    } underline underline-offset-4 mb-6 cursor-pointer`}
+                    onClick={handleNavigation(index)}
+                  >
+                    {item}
+                  </p>
+                ))}
+                
               </div>
-              <div className="text-center md:text-left md:mr-[19px]">
+              <div className="text-center md:text-left md:mr-[19px] relative ">
+                {/* <img className="absolute right-0 z-0" src={shadow3} alt="" /> */}
                 <h2 className="inter600 text-[16px] land:text-[22px] text-[#1d1d1d] mb-6 ">
                   Redirects
                 </h2>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Create App Store redirects
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Create Country redirects
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Use a link rotator
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Hiding referrers
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Podcast redirects
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Forwarding URL Query Parameters
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Fixing slow redirects
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Expiring Links
-                </p>
+                {Redirects.map((item, index) => (
+                  <p
+                    className={`inter400 text-[12px] land:text-[18px] ${
+                      activeTab === index ? "text-blue-600" : "text-[#307EF3]"
+                    } underline underline-offset-4 mb-6 cursor-pointer`}
+                    onClick={handleNavigation(index)}
+                  >
+                    {item}
+                  </p>
+                ))}
+                
                 <h2 className="inter600 text-[16px] land:text-[22px] text-[#1d1d1d] mb-6 mt-8">
                   Tracking Pixels
                 </h2>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Using Meta / X / Google Pixels
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Add Meta Pixel to Links
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Adding Twitter Tailored Audience Tag to Links
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Facebook/Meta Pixel & Amazon Retargeting
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Google Tag Manager
-                </p>
+                {Tracking.map((item, index) => (
+                  <p
+                    className={`inter400 text-[12px] land:text-[18px] ${
+                      activeTab === index ? "text-blue-600" : "text-[#307EF3]"
+                    } underline underline-offset-4 mb-6 cursor-pointer`}
+                    onClick={handleNavigation(index)}
+                  >
+                    {item}
+                  </p>
+                ))}
+                
                 <h2 className="inter600 text-[16px] land:text-[22px] text-[#1d1d1d] mb-6 mt-8">
                   Traffic Quality
                 </h2>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Links Blocked by Spam Filters
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Inflated Click Figure
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  ISP Lookup
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Search Bots
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Cloud Providers
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Links Blocked by Facebook/Instagram/Meta
-                </p>
+                {Traffic.map((item, index) => (
+                  <p
+                    className={`inter400 text-[12px] land:text-[18px] ${
+                      activeTab === index ? "text-blue-600" : "text-[#307EF3]"
+                    } underline underline-offset-4 mb-6 cursor-pointer`}
+                    onClick={handleNavigation(index)}
+                  >
+                    {item}
+                  </p>
+                ))}
+                
                 <h2 className="inter600 text-[16px] land:text-[22px] text-[#1d1d1d] mb-6 mt-8">
                   Domains
                 </h2>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Add a custom domain
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Using Namecheap
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Default Domain Redirect
-                </p>
+                {Domain.map((item, index) => (
+                  <p
+                    className={`inter400 text-[12px] land:text-[18px] ${
+                      activeTab === index ? "text-blue-600" : "text-[#307EF3]"
+                    } underline underline-offset-4 mb-6 cursor-pointer`}
+                    onClick={handleNavigation(index)}
+                  >
+                    {item}
+                  </p>
+                ))}
+                
                 <h2 className="inter600 text-[16px] land:text-[22px] text-[#1d1d1d] mb-6 mt-8">
                   Miscellaneous
                 </h2>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Feature Request
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Anti-Spam Policy
-                </p>
-                <p className="inter400 text-[12px] land:text-[18px] text-[#307EF3] underline underline-offset-4 mb-6">
-                  Release Notes
-                </p>
+                {Miscellaneous.map((item, index) => (
+                  <p
+                    className={`inter400 text-[12px] land:text-[18px] ${
+                      activeTab === index ? "text-blue-600" : "text-[#307EF3]"
+                    } underline underline-offset-4 mb-6 cursor-pointer`}
+                    onClick={handleNavigation(index)}
+                  >
+                    {item}
+                  </p>
+                ))}
+               
               </div>
             </div>
           </div>

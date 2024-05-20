@@ -21,46 +21,46 @@ export default function Footer() {
             <div className='mb-5'>
                 <h2 className='inter600 text-[#3E3E59]'>LINKLY</h2>
                 <ul className='flex flex-col gap-3 mt-2'>
-                    <li className='inter400 text-[#3e3e59] text-[14px]'>Features</li>
-                    <li className='inter400 text-[#3e3e59] text-[14px]'>Pricing</li>
-                    <li className='inter400 text-[#3e3e59] text-[14px]'>Competitors</li>
-                    <li className='inter400 text-[#3e3e59] text-[14px]'>Affiliate Program</li>
-                    <li className='inter400 text-[#3e3e59] text-[14px]'>Status & Uptime</li>
-                    <li className='inter400 text-[#3e3e59] text-[14px]'>Contact</li>
+                    <li className='inter400 text-[#3e3e59] text-[12px] land:text-[14px]'>Features</li>
+                    <li className='inter400 text-[#3e3e59] text-[12px] land:text-[14px]'>Pricing</li>
+                    <li className='inter400 text-[#3e3e59] text-[12px] land:text-[14px]'>Competitors</li>
+                    <li className='inter400 text-[#3e3e59] text-[12px] land:text-[14px]'>Affiliate Program</li>
+                    <li className='inter400 text-[#3e3e59] text-[12px] land:text-[14px]'>Status & Uptime</li>
+                    <li className='inter400 text-[#3e3e59] text-[12px] land:text-[14px]'>Contact</li>
                 </ul>
             </div>
             <div className='mb-5'>
                 <h2 className='inter600 text-[#3E3E59]'>Guides</h2>
                 <ul className='flex flex-col gap-3 mt-2'>
-                    <li className='inter400 text-[#3e3e59] text-[14px]'>Tracking links</li>
-                    <li className='inter400 text-[#3e3e59] text-[14px]'>Link rotators</li>
-                    <li className='inter400 text-[#3e3e59] text-[14px]'>Click fraud</li>
-                    <li className='inter400 text-[#3e3e59] text-[14px]'>Vanity URls</li>
-                    <li className='inter400 text-[#3e3e59] text-[14px]'>Blog</li>
-                    <li className='inter400 text-[#3e3e59] text-[14px]'>Release Notes</li>
+                    <li className='inter400 text-[#3e3e59] text-[12px] land:text-[14px]'>Tracking links</li>
+                    <li className='inter400 text-[#3e3e59] text-[12px] land:text-[14px]'>Link rotators</li>
+                    <li className='inter400 text-[#3e3e59] text-[12px] land:text-[14px]'>Click fraud</li>
+                    <li className='inter400 text-[#3e3e59] text-[12px] land:text-[14px]'>Vanity URls</li>
+                    <li className='inter400 text-[#3e3e59] text-[12px] land:text-[14px]'>Blog</li>
+                    <li className='inter400 text-[#3e3e59] text-[12px] land:text-[14px]'>Release Notes</li>
 
                 </ul>
             </div>
             <div className='mb-5'>
                 <h2 className='inter600 text-[#3E3E59]'>LIntegrations</h2>
                 <ul className='flex flex-col gap-3 mt-2'>
-                    <li className='inter400 text-[#3e3e59] text-[14px]'>Linkly for Chrome & Firefox</li>
-                    <li className='inter400 text-[#3e3e59] text-[14px]'>Linkly for Google Sheets</li>
-                    <li className='inter400 text-[#3e3e59] text-[14px]'>Linkly for Zapier</li>
-                    <li className='inter400 text-[#3e3e59] text-[14px]'>Google Analytics $</li>
-                    <li className='inter400 text-[#3e3e59] text-[14px]'>Google Tag Manager</li>
-                    <li className='inter400 text-[#3e3e59] text-[14px]'>API</li>
+                    <li className='inter400 text-[#3e3e59] text-[12px] land:text-[14px]'>Linkly for Chrome & Firefox</li>
+                    <li className='inter400 text-[#3e3e59] text-[12px] land:text-[14px]'>Linkly for Google Sheets</li>
+                    <li className='inter400 text-[#3e3e59] text-[12px] land:text-[14px]'>Linkly for Zapier</li>
+                    <li className='inter400 text-[#3e3e59] text-[12px] land:text-[14px]'>Google Analytics $</li>
+                    <li className='inter400 text-[#3e3e59] text-[12px] land:text-[14px]'>Google Tag Manager</li>
+                    <li className='inter400 text-[#3e3e59] text-[12px] land:text-[14px]'>API</li>
                 </ul>
             </div>
             <div className='mb-5'>
                 <h2 className='inter600 text-[#3E3E59]'>Legal</h2>
                 <ul className='flex flex-col gap-3 mt-2'>
-                    <li className='inter400 text-[#3e3e59] text-[14px]'>Terms of Use</li>
-                    <li className='inter400 text-[#3e3e59] text-[14px]'>Privacy Policy</li>
-                    <li className='inter400 text-[#3e3e59] text-[14px]'>GDPR</li>
-                    <li className='inter400 text-[#3e3e59] text-[14px]'>Affiliate Program</li>
-                    <li className='inter400 text-[#3e3e59] text-[14px]'>Status & Uptime</li>
-                    <li className='inter400 text-[#3e3e59] text-[14px]'>Contact</li>
+                    <li className='inter400 text-[#3e3e59] text-[12px] land:text-[14px]'>Terms of Use</li>
+                    <li className='inter400 text-[#3e3e59] text-[12px] land:text-[14px]'>Privacy Policy</li>
+                    <li className='inter400 text-[#3e3e59] text-[12px] land:text-[14px]'>GDPR</li>
+                    <li className='inter400 text-[#3e3e59] text-[12px] land:text-[14px]'>Affiliate Program</li>
+                    <li className='inter400 text-[#3e3e59] text-[12px] land:text-[14px]'>Status & Uptime</li>
+                    <li className='inter400 text-[#3e3e59] text-[12px] land:text-[14px]'>Contact</li>
                 </ul>
             </div>
             </div>
